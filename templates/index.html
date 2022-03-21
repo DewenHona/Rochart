@@ -36,6 +36,35 @@
                     borderColor: 'rgb(255, 99, 132)',
                     data: [],
                     fill: false,
+                },
+                {
+                    label: "EEG Data 2",
+                    backgroundColor: 'rgb(0, 99, 132)',
+                    borderColor: 'rgb(0, 99, 132)',
+                    data: [],
+                    fill: false,
+                },
+                {
+                    label: "EEG Data 3",
+                    backgroundColor: 'rgb(0, 0, 132)',
+                    borderColor: 'rgb(0, 0, 132)',
+                    data: [],
+                    fill: false,
+                },
+                {
+                    label: "EEG Data 4",
+                    backgroundColor: 'rgb(0, 99, 0)',
+                    borderColor: 'rgb(0, 99, 0)',
+                    data: [],
+                    fill: false,
+                }
+            ,
+               {
+                    label: "EEG Data 5",
+                    backgroundColor: 'rgb(100, 0, 132)',
+                    borderColor: 'rgb(100, 0, 132)',
+                    data: [],
+                    fill: false,
                 }
             ],
             },
@@ -83,9 +112,20 @@
             if (config.data.labels.length === 20) {
                 config.data.labels.shift();
                 config.data.datasets[0].data.shift();
+                config.data.datasets[1].data.shift();
+                config.data.datasets[2].data.shift();
+                config.data.datasets[3].data.shift();
+                config.data.datasets[4].data.shift();
+
             }
             config.data.labels.push(data.time);
-            config.data.datasets[0].data.push(data.value);
+            config.data.datasets[0].data.push(data.value1);
+            config.data.datasets[1].data.push(data.value2);
+            config.data.datasets[2].data.push(data.value3);
+            config.data.datasets[3].data.push(data.value4);
+            config.data.datasets[4].data.push(data.value5);
+
+
             lineChart.update();
         }
     });
