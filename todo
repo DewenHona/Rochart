@@ -1,0 +1,9 @@
+Good evening Mr. Dewen Honawale, this is flask application. 
+The dynamic charts is displayed on the front end. 
+Current version displays just random values on chart. 
+
+- Flask sends numeric data stored in a string to client needs to be plotted on actual chart. 
+- Modify the given javascript code in html file to plot actual data sent by the server(flask). 
+
+For plotting dynamic chart we are using Plotly.js Library. 
+If you need more detailed explanation, we can have a meeting.
